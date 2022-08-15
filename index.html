@@ -1,1 +1,42 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section class="game-intro">
+        <button class="start-button" id="start-button">START GAME</button>
+    </section>
+    <section class="lifeScoreDisplay hide">
+        <p id="score">
+            <span>Score:</span> <span id="scoreElement">0</span>
+        </p>
+        <p id="life">
+            <span>Life:</span> <span id="lifeElement">3</span>
+        </p>
+    </section>
+
+    <canvas id="canvas" class="hide"></canvas>
+
+    <section class="you-lose hide">
+        <button class="tryAgain" id="try-again-button">TRY AGAIN</button>
+        <p id="showScore"></p>
+    </section>
+
+    <script src="./JS/EnemyBullet.js"></script>
+    <script src="./JS/Bullet.js"></script>
+    <script src="./JS/Enemy.js"></script>
+    <script src="./JS/Player.js"></script>
+    <script src="./JS/Background.js"></script>
+    <script src="./JS/App.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
